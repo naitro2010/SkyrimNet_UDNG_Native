@@ -192,7 +192,7 @@ namespace plugin {
                                         }
                                         return false;
                                     });
-                                std::string action = std::format("EQUIP_{}", actionName.c_str());
+                                std::string action = std::format("EQUIP_{}_{}", kc.second,actionName.c_str());
                                 std::string desc = std::format("Lock a {} on the target actor", armorName);
 
                                 PublicRegisterCPPAction(action, desc, AlwaysEligible, lambda, "", "CPP_CUSTOM", 15,
@@ -225,7 +225,7 @@ namespace plugin {
                                     }
                                     return false;
                                 });
-                            std::string action = std::format("EQUIP_{}", actionName.c_str());
+                            std::string action = std::format("EQUIP_{}_{}", captured_category, actionName.c_str());
                             std::string desc = std::format("Lock a {} on the target actor", armorName);
 
                             PublicRegisterCPPAction(action, desc, AlwaysEligible, lambda, "", "CPP_CUSTOM", 15, "{\"target\": \"Actor\"}",
