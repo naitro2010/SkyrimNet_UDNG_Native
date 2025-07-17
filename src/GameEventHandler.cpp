@@ -198,7 +198,6 @@ namespace plugin {
                                 PublicRegisterCPPAction(action, desc, AlwaysEligible, lambda, "", "CPP_CUSTOM", 15,
                                                         "{\"target\": \"Actor\"}", captured_category, captured_category, "");
                                 found = true;
-                                break;
                             }
                         }
                         if (found == false) {
