@@ -195,7 +195,7 @@ namespace plugin {
                                 std::string action = std::format("EQUIP_{}_{}", kc.second,actionName.c_str());
                                 std::string desc = std::format("Lock a {} on the target actor", armorName);
 
-                                PublicRegisterCPPAction(action, desc, AlwaysEligible, lambda, "", "CPP_CUSTOM", 15,
+                                PublicRegisterCPPAction(action, desc, AlwaysEligible, lambda, "", "CPP_NESTED_ACTION", 15,
                                                         "{\"target\": \"Actor\"}", captured_category, captured_category, "");
                                 found = true;
                             }
@@ -228,7 +228,7 @@ namespace plugin {
                             std::string action = std::format("EQUIP_{}_{}", captured_category, actionName.c_str());
                             std::string desc = std::format("Lock a {} on the target actor", armorName);
 
-                            PublicRegisterCPPAction(action, desc, AlwaysEligible, lambda, "", "CPP_CUSTOM", 15, "{\"target\": \"Actor\"}",
+                            PublicRegisterCPPAction(action, desc, AlwaysEligible, lambda, "", "CPP_NESTED_ACTION", 15, "{\"target\": \"Actor\"}",
                                                     captured_category, captured_category, "");
                             found = true;
                         }
