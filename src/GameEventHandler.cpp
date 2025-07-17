@@ -45,7 +45,10 @@ namespace plugin {
     void GameEventHandler::onPostLoad() {
         logger::info("onPostLoad()");
     }
-    bool AlwaysEligible(RE::Actor*) {
+    bool AlwaysEligible(RE::Actor* actor) {
+        if (actor->IsChild()) {
+            return false;
+        }
         return true;
     }
     bool ExecuteSpank(RE::Actor *,std::string) {
