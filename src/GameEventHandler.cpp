@@ -108,51 +108,51 @@ namespace plugin {
                 keyword_to_category.insert_or_assign("zad_DeviousArmbinderElbow", "ELBOW_BINDERS");
                 keyword_to_category.insert_or_assign("zad_DeviousStraitJacket", "STRAITJACKETS");
                 if (FindFunctions()) {
-                    PublicRegisterCPPSubCategory("BDSMLOCK", "Pick a BDSM device to lock on an actor", AlwaysEligible, "", 1, "",
+                    PublicRegisterCPPSubCategory("BDSMLOCK", "Lock a gag, collar, chastity belt, or other BDSM device on a target", AlwaysEligible, "", 1, "",
                                                  "BDSMLOCK", "", "");
-                    PublicRegisterCPPSubCategory("ANKLE_SHACKLES", "Pick the ankle shackles to lock on the target", AlwaysEligible, "", 1,
+                    PublicRegisterCPPSubCategory("ANKLE_SHACKLES", "Pick the ankle shackles to lock on a target", AlwaysEligible, "", 1,
                                                  "", "ANKLE_SHACKLES", "BDSMLOCK", "");
-                    PublicRegisterCPPSubCategory("ARMBINDERS", "Pick the arm binder to lock on the target", AlwaysEligible, "", 1,
+                    PublicRegisterCPPSubCategory("ARMBINDERS", "Pick the arm binder to lock on a target", AlwaysEligible, "", 1,
                                                  "", "ARMBINDERS", "BDSMLOCK", "");
-                    PublicRegisterCPPSubCategory("ARM_CUFFS", "Pick the arm cuff to lock on the target", AlwaysEligible, "", 1, "",
+                    PublicRegisterCPPSubCategory("ARM_CUFFS", "Pick the arm cuff to lock on a target", AlwaysEligible, "", 1, "",
                                                  "ARM_CUFFS", "BDSMLOCK", "");
-                    PublicRegisterCPPSubCategory("CHASTITY_BELTS", "Pick the chastity belt to lock on the target", AlwaysEligible, "", 1,
+                    PublicRegisterCPPSubCategory("CHASTITY_BELTS", "Pick the chastity belt to lock on a target", AlwaysEligible, "", 1,
                                                  "", "CHASTITY_BELTS", "BDSMLOCK", "");
-                    PublicRegisterCPPSubCategory("CHASTITY_BRAS", "Pick the chastity bra to lock on the target", AlwaysEligible, "", 1,
+                    PublicRegisterCPPSubCategory("CHASTITY_BRAS", "Pick the chastity bra to lock on a target", AlwaysEligible, "", 1,
                                                  "", "CHASTITY_BRAS", "BDSMLOCK", "");
-                    PublicRegisterCPPSubCategory("BLINDFOLDS", "Pick the blindfold to lock on the target", AlwaysEligible, "", 1,
+                    PublicRegisterCPPSubCategory("BLINDFOLDS", "Pick the blindfold to lock on a target", AlwaysEligible, "", 1,
                                                  "", "BLINDFOLDS", "BDSMLOCK", "");
-                    PublicRegisterCPPSubCategory("BOOTS", "Pick the boot to lock on the target", AlwaysEligible, "", 1, "", "BOOTS",
+                    PublicRegisterCPPSubCategory("BOOTS", "Pick the boot to lock on a target", AlwaysEligible, "", 1, "", "BOOTS",
                                                  "BDSMLOCK", "");
-                    PublicRegisterCPPSubCategory("BUTTERFLY_BINDERS", "Pick the butterfly binder to lock on the target", AlwaysEligible, "",
+                    PublicRegisterCPPSubCategory("BUTTERFLY_BINDERS", "Pick the butterfly binder to lock on a target", AlwaysEligible, "",
                                                  1, "", "BUTTERFLY_BINDERS", "BDSMLOCK", "");
-                    PublicRegisterCPPSubCategory("COLLARS", "Pick the collar to lock on the target", AlwaysEligible, "", 1, "",
+                    PublicRegisterCPPSubCategory("COLLARS", "Pick the collar to lock on a target", AlwaysEligible, "", 1, "",
                                                  "COLLARS", "BDSMLOCK", "");
-                    PublicRegisterCPPSubCategory("CORSETS", "Pick the corset to lock on the target", AlwaysEligible, "", 1, "",
+                    PublicRegisterCPPSubCategory("CORSETS", "Pick the corset to lock on a target", AlwaysEligible, "", 1, "",
                                                  "CORSETS", "BDSMLOCK", "");
-                    PublicRegisterCPPSubCategory("ELBOW_BINDERS", "Pick the elbow binder to lock on the target", AlwaysEligible, "", 1,
+                    PublicRegisterCPPSubCategory("ELBOW_BINDERS", "Pick the elbow binder to lock on a target", AlwaysEligible, "", 1,
                                                  "", "ELBOW_BINDERS", "BDSMLOCK", "");
-                    PublicRegisterCPPSubCategory("GAGS", "Pick the gag to lock on the target", AlwaysEligible, "", 1, "", "GAGS",
+                    PublicRegisterCPPSubCategory("GAGS", "Pick the gag to lock on a target", AlwaysEligible, "", 1, "", "GAGS",
                                                  "BDSMLOCK", "");
-                    PublicRegisterCPPSubCategory("GLOVES", "Pick the glove to lock on the target", AlwaysEligible, "", 1, "",
+                    PublicRegisterCPPSubCategory("GLOVES", "Pick the glove to lock on a target", AlwaysEligible, "", 1, "",
                                                  "GLOVES", "BDSMLOCK", "");
-                    PublicRegisterCPPSubCategory("HARNESSES", "Pick the harness to lock on the target", AlwaysEligible, "", 1, "",
+                    PublicRegisterCPPSubCategory("HARNESSES", "Pick the harness to lock on a target", AlwaysEligible, "", 1, "",
                                                  "HARNESSES", "BDSMLOCK", "");
-                    PublicRegisterCPPSubCategory("HOODS", "Pick the hood to lock on the target", AlwaysEligible, "", 1, "", "HOODS",
+                    PublicRegisterCPPSubCategory("HOODS", "Pick the hood to lock on a target", AlwaysEligible, "", 1, "", "HOODS",
                                                  "BDSMLOCK", "");
-                    PublicRegisterCPPSubCategory("LEG_CUFFS", "Pick the leg cuffs to lock on the target", AlwaysEligible, "", 1, "",
+                    PublicRegisterCPPSubCategory("LEG_CUFFS", "Pick the leg cuffs to lock on a target", AlwaysEligible, "", 1, "",
                                                  "LEG_CUFFS", "BDSMLOCK", "");
-                    PublicRegisterCPPSubCategory("PIERCINGS", "Pick the piercing to lock on the target", AlwaysEligible, "", 1, "",
+                    PublicRegisterCPPSubCategory("PIERCINGS", "Pick the piercing to lock on a target", AlwaysEligible, "", 1, "",
                                                  "PIERCINGS", "BDSMLOCK", "");
-                    PublicRegisterCPPSubCategory("PLUGS", "Pick the plug to lock on the target", AlwaysEligible, "", 1, "", "PLUGS",
+                    PublicRegisterCPPSubCategory("PLUGS", "Pick the plug to lock on a target", AlwaysEligible, "", 1, "", "PLUGS",
                                                  "BDSMLOCK", "");
-                    PublicRegisterCPPSubCategory("SUITS", "Pick the suit to lock on the target", AlwaysEligible, "", 1, "", "SUITS",
+                    PublicRegisterCPPSubCategory("SUITS", "Pick the suit to lock on a target", AlwaysEligible, "", 1, "", "SUITS",
                                                  "BDSMLOCK", "");
-                    PublicRegisterCPPSubCategory("STRAITJACKETS", "Pick the straitjacket to lock on the target", AlwaysEligible, "", 1,
+                    PublicRegisterCPPSubCategory("STRAITJACKETS", "Pick the straitjacket to lock on a target", AlwaysEligible, "", 1,
                                                  "", "STRAITJACKETS", "BDSMLOCK", "");
-                    PublicRegisterCPPSubCategory("YOKES", "Pick the yoke to lock on the target", AlwaysEligible, "", 1, "", "YOKES",
+                    PublicRegisterCPPSubCategory("YOKES", "Pick the yoke to lock on a target", AlwaysEligible, "", 1, "", "YOKES",
                                                  "BDSMLOCK", "");
-                    PublicRegisterCPPSubCategory("OTHER", "Pick the other device to lock on the target", AlwaysEligible, "", 1, "",
+                    PublicRegisterCPPSubCategory("OTHER", "Pick a device outside any of the other categories to lock on a target", AlwaysEligible, "", 1, "",
                                                  "OTHER", "BDSMLOCK", "");
 
                     //if (auto DDE = RE::TESDataHandler::GetSingleton()->LookupLoadedModByName("Devious Devices - Expansion.esm")) {
@@ -196,7 +196,7 @@ namespace plugin {
                                         return false;
                                     });
                                 std::string action = std::format("EQUIP_{}_{}", kc.second,actionName.c_str());
-                                std::string desc = std::format("Lock a {} on the target actor", armorName);
+                                std::string desc = std::format("Lock a {} on a target actor", armorName);
 
                                 PublicRegisterCPPAction(action, desc, AlwaysEligible, lambda, "", "CPP_NESTED_ACTION", 15,
                                                         "{\"target\": \"Actor\"}", captured_category, captured_category, "");
@@ -229,7 +229,7 @@ namespace plugin {
                                     return false;
                                 });
                             std::string action = std::format("EQUIP_{}_{}", captured_category, actionName.c_str());
-                            std::string desc = std::format("Lock a {} on the target actor", armorName);
+                            std::string desc = std::format("Lock a {} on a target actor", armorName);
 
                             PublicRegisterCPPAction(action, desc, AlwaysEligible, lambda, "", "CPP_NESTED_ACTION", 15, "{\"target\": \"Actor\"}",
                                                     captured_category, captured_category, "");
