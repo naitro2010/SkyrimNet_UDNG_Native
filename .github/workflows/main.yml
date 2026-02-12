@@ -1,4 +1,4 @@
-name: Template
+name: SkyrimNet_DDUDNG
 on:
   push:
     branches: ["main"]
@@ -9,8 +9,8 @@ on:
         type: string
 env:
   BUILD_TYPE: Release
-  PROJECT_NAME: Template
-  PROJECT_LONG_NAME: Template
+  PROJECT_NAME: SkyrimNet_DDUDNG
+  PROJECT_LONG_NAME: SkyrimNet_DDUDNG
 jobs:
   build-skse:
     runs-on: windows-latest
@@ -42,11 +42,11 @@ jobs:
           cd artifacts
           mkdir SKSE
           mkdir SKSE/Plugins
-          move ../Template.dll SKSE/Plugins
-          move ../Template.pdb SKSE/Plugins
+          move ../SkyrimNet_DDUDNG.dll SKSE/Plugins
+          move ../SkyrimNet_DDUDNG.pdb SKSE/Plugins
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4
         with: 
-          name: Template
+          name: SkyrimNet_DDUDNG
           path: build/bin/release/artifacts
           retention-days: 90
