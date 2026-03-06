@@ -17,7 +17,7 @@ inline bool FindFunctions() {
     auto hDLL = LoadLibraryA("SkyrimNet");
     if (hDLL != nullptr) {
         PublicGetVersion = (int (*)()) GetProcAddress(hDLL, "PublicGetVersion");
-        if (PublicGetVersion != nullptr && PublicGetVersion() == 2) {
+        if (PublicGetVersion != nullptr && PublicGetVersion() >= 2) {
             PublicRegisterCPPAction =
                 (bool (*)(const std::string name, const std::string description, std::function<bool(RE::Actor *)> eligibleCallback,
                 std::function<bool(RE::Actor *, std::string json_params)> executeCallback, const std::string triggeringEventTypesCSV,
